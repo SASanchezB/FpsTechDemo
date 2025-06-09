@@ -173,6 +173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 75
+  enemyHitEffectPrefab: {fileID: 1905540317139336133, guid: e2f92db8ab33b5b428a8b493153194aa, type: 3}
+  defaultHitEffectPrefab: {fileID: 1905540317139336133, guid: 01a0b3aa09dcce340b1e8f415154da0d, type: 3}
 --- !u!96 &3903409970904999552
 TrailRenderer:
   serializedVersion: 3

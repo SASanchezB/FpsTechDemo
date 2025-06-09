@@ -4,6 +4,10 @@ public class ThrowingKnife : MonoBehaviour, IPoolable
 {
     public int damage = 75;
 
+    [Header("Impact Effects")]
+    public GameObject enemyHitEffectPrefab;    // Partícula para impacto en enemigos
+    public GameObject defaultHitEffectPrefab;  // Partícula para impacto en otras superficies
+
     private Rigidbody rb;
     private bool hasHit = false;
 
@@ -30,7 +34,7 @@ public class ThrowingKnife : MonoBehaviour, IPoolable
         rb.linearDamping = 0;
         rb.angularDamping = 0;
 
-        transform.SetParent(null); // Se asegura de estar libre
+        transform.SetParent(null);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -41,24 +45,36 @@ public class ThrowingKnife : MonoBehaviour, IPoolable
         hasHit = true;
 
         GameObject hitObject = collision.gameObject;
+        ContactPoint contact = collision.contacts[0];
 
+        // Si golpea a un enemigo
         if (hitObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             HealthControllerEnemy enemyHealth = hitObject.GetComponent<HealthControllerEnemy>();
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damage);
+                Debug.Log("Cuchillo DAÑO");
+
+                // Partícula de impacto en enemigo
+                if (enemyHitEffectPrefab != null)
+                    Instantiate(enemyHitEffectPrefab, contact.point, Quaternion.LookRotation(contact.normal));
+
                 gameObject.SetActive(false);
-                Debug.Log("Cuchillo DA�O");
             }
         }
+        else
+        {
+            // Partícula de impacto genérica
+            if (defaultHitEffectPrefab != null)
+                Instantiate(defaultHitEffectPrefab, contact.point, Quaternion.LookRotation(contact.normal));
+        }
 
-        // El cuchillo se pega en el punto de impacto
+        // Clava el cuchillo
         rb.isKinematic = true;
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
-
-        transform.SetParent(null); // Opcional: puedes hacer que se "pegue" al enemigo
+        transform.SetParent(null);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -70,13 +86,13 @@ public class ThrowingKnife : MonoBehaviour, IPoolable
         ThrowingMechanic mechanic = other.GetComponentInParent<ThrowingMechanic>();
         if (mechanic != null)
         {
-            if (mechanic.throwUpwardForce < 1) // Si es cuchillo (usando tu l�gica)
+            if (mechanic.throwUpwardForce < 1)
             {
                 mechanic.totalThrows++;
                 mechanic.UpdateUI();
             }
 
-            gameObject.SetActive(false); // NO destruir, se reutiliza
+            gameObject.SetActive(false); // Reutilizable
         }
     }
 }

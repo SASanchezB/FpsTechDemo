@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 98815856}
   - component: {fileID: 98815855}
   - component: {fileID: 98815859}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Maquina Potenciadora (Random)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98815852}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -831,7 +831,7 @@ GameObject:
   - component: {fileID: 142188715}
   - component: {fileID: 142188717}
   - component: {fileID: 142188716}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1133,7 +1133,7 @@ GameObject:
   - component: {fileID: 154831836}
   - component: {fileID: 154831838}
   - component: {fileID: 154831837}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1678,7 +1678,7 @@ GameObject:
   - component: {fileID: 216318397}
   - component: {fileID: 216318396}
   - component: {fileID: 216318395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dispense (Cuchillos)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1754,7 +1754,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216318393}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1892,7 +1892,7 @@ GameObject:
   - component: {fileID: 249549376}
   - component: {fileID: 249549375}
   - component: {fileID: 249549374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dispense (ShotgunChamber)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1949,7 +1949,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249549373}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2630,7 +2630,7 @@ GameObject:
   - component: {fileID: 307436854}
   - component: {fileID: 307436853}
   - component: {fileID: 307436857}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dispense (Random Gun)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2681,7 +2681,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307436850}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2784,7 +2784,7 @@ GameObject:
   - component: {fileID: 320889503}
   - component: {fileID: 320889502}
   - component: {fileID: 320889501}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dispense (Granadas)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2860,7 +2860,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320889499}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -4707,7 +4707,7 @@ GameObject:
   - component: {fileID: 558224164}
   - component: {fileID: 558224166}
   - component: {fileID: 558224165}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5472,7 +5472,7 @@ GameObject:
   - component: {fileID: 659746177}
   - component: {fileID: 659746176}
   - component: {fileID: 659746175}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dispense (Machine)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5529,7 +5529,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659746174}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -5654,7 +5654,7 @@ GameObject:
   - component: {fileID: 694566656}
   - component: {fileID: 694566658}
   - component: {fileID: 694566657}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7399,7 +7399,7 @@ GameObject:
   - component: {fileID: 866907555}
   - component: {fileID: 866907554}
   - component: {fileID: 866907553}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dispense (ShotgunPump)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7456,7 +7456,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866907552}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -8758,7 +8758,7 @@ GameObject:
   - component: {fileID: 1018058919}
   - component: {fileID: 1018058918}
   - component: {fileID: 1018058917}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dispense (Burst Gun)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8815,7 +8815,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018058916}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -9050,7 +9050,7 @@ GameObject:
   - component: {fileID: 1037005558}
   - component: {fileID: 1037005560}
   - component: {fileID: 1037005559}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9711,7 +9711,7 @@ GameObject:
   - component: {fileID: 1124894891}
   - component: {fileID: 1124894890}
   - component: {fileID: 1124894895}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dispense (Desert Eagle)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9746,7 +9746,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124894889}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -11981,7 +11981,7 @@ GameObject:
   - component: {fileID: 1509527973}
   - component: {fileID: 1509527977}
   - component: {fileID: 1509527978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Maquina Potenciadora (Velocidad)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12110,7 +12110,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509527972}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -13227,7 +13227,7 @@ GameObject:
   - component: {fileID: 1629070937}
   - component: {fileID: 1629070936}
   - component: {fileID: 1629070941}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Maquina Potenciadora (Cadencia + Da\xF1o)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13241,7 +13241,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629070934}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -13422,7 +13422,7 @@ MonoBehaviour:
     m_Bits: 64
   costo: 150
   textoDispenser: {fileID: 63881516}
-  fraseBase: 'Abrir Puerta: '
+  fraseBase: 'Open Door: '
   playerWeaponManager: {fileID: 1251932940}
   jugadorDentro: 0
 --- !u!65 &1635315063
@@ -13933,7 +13933,7 @@ GameObject:
   - component: {fileID: 1735967782}
   - component: {fileID: 1735967780}
   - component: {fileID: 1735967786}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Maquina Potenciadora (Vida)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13947,7 +13947,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735967779}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -15497,7 +15497,7 @@ GameObject:
   - component: {fileID: 1986385639}
   - component: {fileID: 1986385641}
   - component: {fileID: 1986385640}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15965,7 +15965,7 @@ GameObject:
   - component: {fileID: 2035755114}
   - component: {fileID: 2035755113}
   - component: {fileID: 2035755112}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Maquina Potenciadora (Recarga)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16004,7 +16004,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035755111}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 831d9b56d07248348a42f0b1665e31fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -16342,7 +16342,7 @@ GameObject:
   - component: {fileID: 2069492665}
   - component: {fileID: 2069492667}
   - component: {fileID: 2069492666}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16773,7 +16773,7 @@ GameObject:
   - component: {fileID: 2144145141}
   - component: {fileID: 2144145143}
   - component: {fileID: 2144145142}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
