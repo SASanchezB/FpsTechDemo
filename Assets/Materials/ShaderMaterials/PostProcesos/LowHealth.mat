@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LowHealth
+  m_Shader: {fileID: -6465566751694194690, guid: f5288f4a6861a944bb6b7b52177be9db, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 25f5e749cca4dbb449771a575ad32622, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.25
+    - _AlphaSpeed: 0.25
+    - _Breath: 0.5
+    - _Fullscreen_AlphaBlendOperation: 0
+    - _Fullscreen_BlendMode: 1
+    - _Fullscreen_ColorBlendOperation: 0
+    - _Fullscreen_DepthWrite: 0
+    - _Fullscreen_DstAlphaBlend: 10
+    - _Fullscreen_DstColorBlend: 10
+    - _Fullscreen_SrcAlphaBlend: 1
+    - _Fullscreen_SrcColorBlend: 5
+    - _IsActive: 1
+    - _Mask_Constrast: 0.9
+    - _Mask_Size: 0.15
+    - _SpeedColor: 0.15
+    m_Colors:
+    - _Color: {r: 64, g: 0, b: 0, a: 1}
+    - _NoiseTiling: {r: 2, g: 2, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
