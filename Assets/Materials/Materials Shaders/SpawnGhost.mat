@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Ghost
+  m_Name: SpawnGhost
   m_Shader: {fileID: -6465566751694194690, guid: b5200d6b5e21caa489f6d518c6028e0c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -51,13 +51,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FresnelPower: 2
+    - _FresnelPower: 2.9
     - _GlowSpread: 0.8
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - _Color: {r: 4, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 2.9960785, g: 0, b: 0, a: 1}
-    - _InteriorColor: {r: 5.992157, g: 0, b: 3.9498427, a: 0}
+    - _FresnelColor: {r: 127.99999, g: 127.99999, b: 127.99999, a: 1}
+    - _InteriorColor: {r: 0, g: 8, b: 7.228138, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

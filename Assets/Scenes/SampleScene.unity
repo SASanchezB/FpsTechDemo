@@ -31606,7 +31606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenSpawns: 2
   maxEnemiesInScene: 3
-  spawnParticle: {fileID: 0}
+  spawnParticle: {fileID: 2692445652936057247, guid: d16bb7b336588064c9a719c52744fe2a, type: 3}
   enemyStatsList:
   - health: 100
   spawnPoints:
