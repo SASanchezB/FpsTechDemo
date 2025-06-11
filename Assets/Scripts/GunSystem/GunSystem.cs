@@ -56,8 +56,17 @@ public class GunSystem : MonoBehaviour, IPausable
     {
         bulletsLeft = magazineSize;
         readyToShoot = true;
+    }
+
+    private void Start()
+    {
         defaultFOV = fpsCam.fieldOfView;
-        bulletHolePool = ObjectPool.Instance;
+
+        if (bulletHolePool == null)
+            bulletHolePool = ObjectPool.Instance;
+
+        if (bulletHolePool == null)
+            Debug.LogWarning($"GunSystem en {gameObject.name} no encontró ObjectPool.Instance en Start.");
     }
 
     private bool isPaused = false;

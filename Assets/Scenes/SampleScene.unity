@@ -9027,7 +9027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &524495310
 Transform:
   m_ObjectHideFlags: 0
@@ -9090,7 +9090,7 @@ MonoBehaviour:
   attackPoint: {fileID: 426346196}
   whatIsEnemy:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   bulletHolePool: {fileID: 1603850936}
   muzzleFlash: {fileID: 3384316133745504226, guid: da5ac2972356b0a478a4a87219422186, type: 3}
   bulletHolePrefab: {fileID: 1905540317139336133, guid: 6930868df290d02468edaa32c90771ab, type: 3}
@@ -20975,8 +20975,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armasEquipadas:
-  - {fileID: 4594540843852752067}
-  armaActivaIndex: 0
+  - {fileID: 524495309}
+  armaActivaIndex: 6
   armaNombreTexto: {fileID: 1359702977}
 --- !u!114 &1251932941
 MonoBehaviour:
@@ -35914,7 +35914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4633473777379687681
 MonoBehaviour:
   m_ObjectHideFlags: 0
