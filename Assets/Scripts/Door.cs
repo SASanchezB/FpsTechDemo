@@ -15,6 +15,10 @@ public class Door : MonoBehaviour
     [SerializeField] private PlayerWeaponManager playerWeaponManager;
     [SerializeField] private bool jugadorDentro = false;
 
+    public GameObject door;
+
+    private bool doorOpened;
+
     private void OnTriggerEnter(Collider other)
     {
         if (((1 << other.gameObject.layer) & jugadorLayer) != 0)
@@ -22,7 +26,7 @@ public class Door : MonoBehaviour
             jugadorDentro = true;
             playerWeaponManager = other.GetComponentInParent<PlayerWeaponManager>();
 
-            if (textoDispenser != null)
+            if (textoDispenser != null && doorOpened == false)
             {
                 textoDispenser.text = $"{fraseBase}${costo}";
             }
@@ -45,7 +49,7 @@ public class Door : MonoBehaviour
 
     private void Update()
     {
-        if (jugadorDentro && Input.GetKeyDown(KeyCode.E))
+        if (jugadorDentro && Input.GetKeyDown(KeyCode.E) && doorOpened==false)
         {
             AbrirPuerta();
         }
@@ -67,7 +71,14 @@ public class Door : MonoBehaviour
 
         if (PointsManager.Instance.GetPoints() >= costo)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+
+            Animator anim = door.GetComponent<Animator>();
+            anim.SetTrigger("Open");
+            textoDispenser.text = "";
+
+            doorOpened = true;
+
             return;
         }
     }

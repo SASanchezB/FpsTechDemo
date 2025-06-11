@@ -52,7 +52,7 @@ Material:
     - _Fullscreen_DstColorBlend: 10
     - _Fullscreen_SrcAlphaBlend: 1
     - _Fullscreen_SrcColorBlend: 5
-    - _IsActive: 1
+    - _IsActive: 0.9999995
     - _Mask_Constrast: 0.3
     - _Mask_Size: 0.8
     - _RainbowColor: 1
