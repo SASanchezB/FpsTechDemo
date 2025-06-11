@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7911664796254919991
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RainBowPixel
-  m_Shader: {fileID: -6465566751694194690, guid: 32e5d9afa9e5b4c47a8fa040c28f27d6, type: 3}
+  m_Name: Shader Graphs_Ghost
+  m_Shader: {fileID: -6465566751694194690, guid: b5200d6b5e21caa489f6d518c6028e0c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -18,15 +31,12 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 25f5e749cca4dbb449771a575ad32622, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -41,24 +51,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 1
-    - _AlphaSpeed: 2
-    - _Breath: 0.5
-    - _Fullscreen_AlphaBlendOperation: 0
-    - _Fullscreen_BlendMode: 1
-    - _Fullscreen_ColorBlendOperation: 0
-    - _Fullscreen_DepthWrite: 0
-    - _Fullscreen_DstAlphaBlend: 10
-    - _Fullscreen_DstColorBlend: 10
-    - _Fullscreen_SrcAlphaBlend: 1
-    - _Fullscreen_SrcColorBlend: 5
-    - _IsActive: 1
-    - _Mask_Constrast: 0.3
-    - _Mask_Size: 0.8
-    - _RainbowColor: 1
-    - _SpeedColor: 0.25
+    - _FresnelPower: 2.9
+    - _GlowSpread: 0.8
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
-    - _Color: {r: 8, g: 0, b: 0, a: 1}
-    - _NoiseTiling: {r: 5, g: 5, b: 0, a: 0}
+    - _Color: {r: 4, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 31.999998, g: 0, b: 0, a: 1}
+    - _InteriorColor: {r: 0.3262532, g: 0, b: 0.21505591, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
