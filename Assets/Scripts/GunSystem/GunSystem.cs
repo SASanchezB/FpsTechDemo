@@ -89,7 +89,13 @@ public class GunSystem : MonoBehaviour, IPausable
         shooting = allowButtonHold ? Input.GetKey(KeyCode.Mouse0) : Input.GetKeyDown(KeyCode.Mouse0);
 
         if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading)
+        {
+            //
+            Animator anim = weaponAnimation.GetComponent<Animator>();
+            anim.SetTrigger("Reload");
+            //
             Reload();
+        }
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && reloading && isPumpAction && bulletsLeft > 0)
         {
@@ -100,11 +106,12 @@ public class GunSystem : MonoBehaviour, IPausable
         if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
         {
             bulletsShot = bulletsPerTap;
+            
+            Shoot();
             //
             Animator anim = weaponAnimation.GetComponent<Animator>();
             anim.SetTrigger("Shoot");
             //
-            Shoot();
         }
     }
 
