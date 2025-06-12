@@ -16,6 +16,7 @@ public class MachineReload : BaseMachine
             if (gs != null)
             {
                 gs.reloadTime /= 2; // Aplica la mejora
+                gs.hasReloadUpgrade = true;
                 weaponsUpgraded++;
             }
         }

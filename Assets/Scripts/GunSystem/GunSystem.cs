@@ -53,6 +53,10 @@ public class GunSystem : MonoBehaviour, IPausable
     public float trailDuration = 0.2f;
 
     [Header("Animaciones")]
+    public bool hasReloadUpgrade = false;
+    public bool hasShootUpgrade = false;
+
+    [Header("Animaciones")]
     public GameObject weaponAnimation;
 
     private void Awake()
@@ -82,6 +86,24 @@ public class GunSystem : MonoBehaviour, IPausable
         MyInput();
         HandleADS();
         text.SetText(bulletsLeft + " / " + magazineSize);
+
+        if (hasReloadUpgrade == true)
+        {
+            UpgradeSpeedAnimation();
+            UpgradeShootAnimation();
+        }
+    }
+
+    private void UpgradeSpeedAnimation()
+    {
+        Animator anim = weaponAnimation.GetComponent<Animator>();
+        anim.SetFloat("UpgradeReload", 2f);
+    }
+
+    private void UpgradeShootAnimation()
+    {
+        Animator anim = weaponAnimation.GetComponent<Animator>();
+        anim.SetFloat("UpgradeShoot", 2f);
     }
 
     private void MyInput()
