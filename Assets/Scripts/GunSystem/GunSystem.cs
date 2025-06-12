@@ -91,8 +91,11 @@ public class GunSystem : MonoBehaviour, IPausable
         if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading)
         {
             //
-            Animator anim = weaponAnimation.GetComponent<Animator>();
-            anim.SetTrigger("Reload");
+            if (isPumpAction == false)
+            {
+                Animator anim = weaponAnimation.GetComponent<Animator>();
+                anim.SetTrigger("Reload");
+            }
             //
             Reload();
         }
@@ -107,10 +110,19 @@ public class GunSystem : MonoBehaviour, IPausable
         {
             bulletsShot = bulletsPerTap;
             
-            Shoot();
             //
             Animator anim = weaponAnimation.GetComponent<Animator>();
             anim.SetTrigger("Shoot");
+            anim.SetBool("IsAuto", true);
+            //
+            Shoot();
+        }
+
+        if (Input.GetKeyUp(KeyCode.Mouse0)) 
+        {
+            //
+            Animator anim = weaponAnimation.GetComponent<Animator>();
+            anim.SetBool("IsAuto", false);
             //
         }
     }
@@ -253,6 +265,10 @@ public class GunSystem : MonoBehaviour, IPausable
     {
         while (bulletsLeft < magazineSize)
         {
+            //
+            Animator anim = weaponAnimation.GetComponent<Animator>();
+            anim.SetTrigger("Reload");
+            //
             yield return new WaitForSeconds(reloadTime);
             if (!gameObject.activeInHierarchy || !reloading) yield break;
             bulletsLeft += bulletsPerTap;

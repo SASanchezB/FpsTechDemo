@@ -3610,7 +3610,7 @@ MonoBehaviour:
   trailStartWidth: 0.05
   trailEndWidth: 0
   trailDuration: 0.2
-  weaponAnimation: {fileID: 0}
+  weaponAnimation: {fileID: 1665599714}
 --- !u!23 &221029051
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6099,7 +6099,7 @@ MonoBehaviour:
   trailStartWidth: 0.05
   trailEndWidth: 0
   trailDuration: 0.2
-  weaponAnimation: {fileID: 0}
+  weaponAnimation: {fileID: 2035212436}
 --- !u!23 &332035068
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9879,7 +9879,7 @@ MonoBehaviour:
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  timeBetweenShooting: 0.3
+  timeBetweenShooting: 0.5
   spread: 0.02
   range: 100
   reloadTime: 1
@@ -10901,7 +10901,7 @@ MonoBehaviour:
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  timeBetweenShooting: 0.25
+  timeBetweenShooting: 0.6
   spread: 0.1
   range: 100
   reloadTime: 1.25
@@ -10933,7 +10933,7 @@ MonoBehaviour:
   trailStartWidth: 0.05
   trailEndWidth: 0
   trailDuration: 0.2
-  weaponAnimation: {fileID: 0}
+  weaponAnimation: {fileID: 282564949}
 --- !u!23 &591710802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32773,7 +32773,7 @@ MonoBehaviour:
   trailStartWidth: 0.05
   trailEndWidth: 0
   trailDuration: 0.2
-  weaponAnimation: {fileID: 0}
+  weaponAnimation: {fileID: 34759488}
 --- !u!23 &1632231156
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43529,7 +43529,7 @@ MonoBehaviour:
   trailStartWidth: 0.05
   trailEndWidth: 0
   trailDuration: 0.2
-  weaponAnimation: {fileID: 0}
+  weaponAnimation: {fileID: 1994784686}
 --- !u!23 &1994784690
 MeshRenderer:
   m_ObjectHideFlags: 0
