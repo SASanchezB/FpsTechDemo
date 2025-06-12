@@ -52,6 +52,9 @@ public class GunSystem : MonoBehaviour, IPausable
     public float trailEndWidth = 0.01f;
     public float trailDuration = 0.2f;
 
+    [Header("Animaciones")]
+    public GameObject weaponAnimation;
+
     private void Awake()
     {
         bulletsLeft = magazineSize;
@@ -97,6 +100,10 @@ public class GunSystem : MonoBehaviour, IPausable
         if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
         {
             bulletsShot = bulletsPerTap;
+            //
+            Animator anim = weaponAnimation.GetComponent<Animator>();
+            anim.SetTrigger("Shoot");
+            //
             Shoot();
         }
     }
@@ -153,7 +160,7 @@ public class GunSystem : MonoBehaviour, IPausable
             hitPoint = fpsCam.transform.position + direction.normalized * range;
         }
 
-    EndShoot:
+        EndShoot:
         StartCoroutine(SpawnRuntimeTrail(attackPoint.position, hitPoint, !hitSomething));
 
         if (camShake != null)
@@ -175,7 +182,18 @@ public class GunSystem : MonoBehaviour, IPausable
         Invoke(nameof(ResetShot), timeBetweenShooting);
         if (bulletsShot > 0 && bulletsLeft > 0)
             Invoke(nameof(Shoot), timeBetweenShots);
+
+
+        //StartCoroutine(FinishAnimation());
     }
+
+    /*private IEnumerator FinishAnimation()
+    {
+        yield return new WaitForSeconds(timeBetweenShots); // Esperar el tiempo entre disparos
+
+        Animator anim = weaponAnimation.GetComponent<Animator>();
+        anim.SetBool("HasShoot", false); // Desactivar animación después del tiempo
+    }*/
 
     private IEnumerator SpawnRuntimeTrail(Vector3 start, Vector3 end, bool isAirShot)
     {
