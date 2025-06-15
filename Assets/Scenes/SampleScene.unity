@@ -3406,7 +3406,7 @@ MonoBehaviour:
     m_Bits: 64
   costo: 75
   textoDispenser: {fileID: 63881516}
-  fraseBase: Press E to fill knifes
+  fraseBase: Press E to fill knives
   playerGrenades: {fileID: 1251932943}
   jugadorDentro: 0
   maxGrenades: 7
